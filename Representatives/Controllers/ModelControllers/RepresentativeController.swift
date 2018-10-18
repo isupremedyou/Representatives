@@ -1,0 +1,14 @@
+//
+//  RepresentativeController.swift
+//  Representatives
+//
+//  Created by Travis Chapman on 10/18/18.
+//  Copyright © 2018 Travis Chapman. All rights reserved.
+//
+
+import Foundation
+
+class RepresentativeController {
+    
+    
+}
