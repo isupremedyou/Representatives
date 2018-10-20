@@ -9,9 +9,7 @@
 import Foundation
 
 class RepresentativeController {
-    
-//    https://whoismyrepresentative.com/getall_reps_bystate.php?state=CA&output=json
-    
+        
     static let baseURL = URL(string: "https://whoismyrepresentative.com/getall_reps_bystate.php")!
     
     static func fetchRepresentatives(forState state: String, completion: @escaping ([Representative]) -> Void ) {
@@ -27,7 +25,6 @@ class RepresentativeController {
             completion([])
             return
         }
-        print(url.absoluteString)
         
         // Create Data Task
         URLSession.shared.dataTask(with: url) { (data, _, error) in
