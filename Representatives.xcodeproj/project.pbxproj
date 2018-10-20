@@ -28,8 +28,8 @@
 		A6B6E8FF217939CC00B2FD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6B6E90B21793B5400B2FD7D /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		A6B6E90D21793CE000B2FD7D /* RepresentativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewCell.swift; sourceTree = "<group>"; };
-		A6B6E90F21793CF300B2FD7D /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateListTableViewController.swift; path = Representatives/Views/StateListTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		A6B6E91121793CFD00B2FD7D /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateDetailTableViewController.swift; path = Representatives/Views/StateDetailTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		A6B6E90F21793CF300B2FD7D /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateListTableViewController.swift; path = Representatives/Controllers/ViewControllers/StateListTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		A6B6E91121793CFD00B2FD7D /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateDetailTableViewController.swift; path = Representatives/Controllers/ViewControllers/StateDetailTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		A6B6E91321793D8000B2FD7D /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
 		A6B6E91521793D8800B2FD7D /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,7 +96,7 @@
 		A6B6E907217939F400B2FD7D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A6B6E909217939F700B2FD7D /* ViewControllers */,
+				A6BD8AE2217943CD000C1A2F /* ViewControllers */,
 				A6B6E908217939F700B2FD7D /* ModelControllers */,
 			);
 			path = Controllers;
@@ -110,22 +110,21 @@
 			path = ModelControllers;
 			sourceTree = "<group>";
 		};
-		A6B6E909217939F700B2FD7D /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				A6B6E90F21793CF300B2FD7D /* StateListTableViewController.swift */,
-				A6B6E91121793CFD00B2FD7D /* StateDetailTableViewController.swift */,
-			);
-			name = ViewControllers;
-			path = "New Group/ViewControllers";
-			sourceTree = "<group>";
-		};
 		A6B6E90A217939FC00B2FD7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				A6B6E90D21793CE000B2FD7D /* RepresentativeTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A6BD8AE2217943CD000C1A2F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B6E90F21793CF300B2FD7D /* StateListTableViewController.swift */,
+				A6B6E91121793CFD00B2FD7D /* StateDetailTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

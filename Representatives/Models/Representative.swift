@@ -13,7 +13,7 @@ struct Representative: Codable {
     let name: String
     let party: String
     let state: String
-    let district: Int
+    let district: String
     let phone: String
     let officeAddress: String
     let webURLAsString: String
